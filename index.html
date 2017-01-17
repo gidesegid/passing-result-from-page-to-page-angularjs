@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
-<head>
-	<title>index</title>
-	    
-      <!--   <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script> -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+   
+    <script data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js" data-require="angular.js@1.2.x"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-app="plunker">
+
+  
+    <div ng-controller="MainCtrl">
+  
+      <p>Enter some data to share between pages:</p>
+      <input ng-model="myValue" />
+      <button ng-click="shareMyData(myValue)">Share Dare</button>
       
-        <!--google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre|Francois+One" rel="stylesheet">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-        <script type="text/javascript" src="controller.js"></script>
-</head>
-<body ng-controller="mycontroller2">
-    <div>
-    	<div>
-    		<label>username: <input type="text" ng-model="username">{{username}}</label>
-    	</div>
     </div>
-</body>
+    
+  </body>
+
 </html>
